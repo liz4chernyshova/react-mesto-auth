@@ -1,0 +1,8 @@
+.photo-element__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    border-radius: 0 0 10px 10px;
+}

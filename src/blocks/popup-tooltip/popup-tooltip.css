@@ -1,0 +1,5 @@
+.popup-tooltip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,0 +1,7 @@
+.photo-element__likes-container {
+    display: flex;
+    max-width: 20px;
+    margin-right: 22px;
+    flex-direction: column;
+    align-items: center;
+}

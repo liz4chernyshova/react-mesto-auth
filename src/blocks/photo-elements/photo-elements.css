@@ -1,0 +1,18 @@
+.photo-elements {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 282px);
+    grid-auto-rows: auto;
+    gap: 20px 17px;
+    margin: 0 auto;
+}
+@media screen and (max-width: 900px) and (min-width: 650px) {
+    .photo-elements {
+        max-width: 581px;
+    }
+}
+@media screen and (max-width: 650px) {
+    .photo-elements {
+        max-width: 282px;
+    }
+}

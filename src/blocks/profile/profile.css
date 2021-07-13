@@ -1,0 +1,21 @@
+.profile {
+    max-width: 100%;
+    min-height: 120px;
+    margin: 40px 0 47.25px;
+    display: flex;
+    align-items: center;
+    background-color: yellow;
+}
+@media screen and (max-width: 900px) and (min-width: 480px){
+    .profile {
+        margin-left: 16px;
+    }
+}
+@media all and (max-width: 700px) {
+    .profile {
+        margin: 42px auto;
+        display: block;
+        text-align: center;
+    }
+}
+

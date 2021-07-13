@@ -1,0 +1,10 @@
+.popup__icon {
+    transform: rotate(-45deg);
+    object-fit: contain;
+}
+@media all and (max-width: 600px) { 
+    .popup__icon { 
+        max-width: 26px;
+        top: -10%;
+    } 
+} 

@@ -1,0 +1,32 @@
+.form__save-btn { 
+    width: 358px;
+    height: 50px;
+    margin: 23px auto 37px;
+    border: none;
+    border-radius: 2px;
+    background-color: #000000;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    transition: 0.3s;
+} 
+.form__save-btn:hover { 
+    opacity: 0.8;
+}
+.form__save-btn:disabled {
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    color: #C4C4C4;
+}
+@media all and (max-width: 600px) { 
+    .form__save-btn { 
+        max-width: 238px;
+        height: 46px;
+        margin: 15px auto 25px;
+    } 
+}

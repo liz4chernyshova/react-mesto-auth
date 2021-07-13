@@ -1,0 +1,28 @@
+.profile__redactor-btn {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    background-color: #000000;
+    margin-left: 18px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.profile__redactor-btn:hover {
+    opacity: 0.6;
+}
+.profile__redactor-btn::before {
+    content: url(../../../images/pen.svg);
+    object-fit: cover;
+}
+@media all and (max-width: 425px) {
+    .profile__redactor-btn {
+        width: 18px;
+        height: 18px;
+        text-align: center;
+    } 
+}

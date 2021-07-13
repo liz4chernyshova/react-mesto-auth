@@ -1,0 +1,17 @@
+.photo-element__like {
+    padding: 0;
+    width: 22px;
+    height: 19px;
+    margin: 0;
+    background-image: url(../../../images/heart.svg);
+    background-color: transparent;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+}
+.photo-element__like:hover {
+    opacity: 0.5;
+    transition: 0.3s;
+}
