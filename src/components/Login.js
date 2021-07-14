@@ -2,27 +2,27 @@ import React from 'react';
 
 export default function Login(props) {
 
-    const [email, setEmail] = React.useState('');
-    const [password, setPassword] = React.useState('');
+    const [email, setEmail] = React.useState(''); 
+    const [password, setPassword] = React.useState(''); 
+ 
+    function handleChange(evt) { 
+        evt.preventDefault(); 
 
-    function handleChange(evt) {
-        evt.preventDefault();
-        if (evt.target.name === "email") {
-            setEmail(evt.target.value);
-        } else if (evt.target.name === "password") {
-            setPassword(evt.target.value);
-        }
-    }
-
-    function handleSubmit(evt) {
-        evt.preventDefault();
-        if (!email || !password) {
-            return;
-        }
-        props.onLogin(email, password);
-        setEmail('');
-        setPassword('');
-    }
+        if (evt.target.name === "email") { 
+            setEmail(evt.target.value); 
+        } else if (evt.target.name === "password") { 
+            setPassword(evt.target.value); 
+        } 
+    } 
+ 
+    function handleSubmit(evt) { 
+        evt.preventDefault(); 
+        if (!email || !password) { 
+            return; 
+        } 
+        props.onLogin(email, password); 
+    } 
+ 
 
     return (
         <main className="content">

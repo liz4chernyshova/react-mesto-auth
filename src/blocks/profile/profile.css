@@ -4,7 +4,6 @@
     margin: 40px 0 47.25px;
     display: flex;
     align-items: center;
-    background-color: yellow;
 }
 @media screen and (max-width: 900px) and (min-width: 480px){
     .profile {

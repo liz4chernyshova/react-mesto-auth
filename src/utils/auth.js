@@ -17,9 +17,6 @@ export const register = (email, password) => {
       body: JSON.stringify({email, password})
     })
     .then(checkResponse)
-    .catch((err) => {
-        console.log(err);
-    });
   };
 
 
@@ -33,9 +30,6 @@ export const authorize = (email, password) => {
         body: JSON.stringify({email, password})
     })
     .then(checkResponse)
-    .catch((err) => {
-        console.log(err);
-    });
 };
 
 
@@ -49,7 +43,4 @@ return fetch(`${BASE_URL}/users/me`, {
     }
 })
   .then(checkResponse)
-  .catch((err) => {
-      console.log(err);
-  });
 }

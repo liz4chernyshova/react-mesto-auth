@@ -50,14 +50,14 @@ function App() {
   }, []);
 
   React.useEffect(() => {
-    Promise.all([api.getUserInfo(), api.getInitialCards()])
-    .then(([userData, cardData]) => {
-        setCurrentUser(userData);
-        setCard(cardData);
-    })
-    .catch((err) => {
-        console.log(err);
-    });
+      Promise.all([api.getUserInfo(), api.getInitialCards()])
+      .then(([userData, cardData]) => {
+          setCurrentUser(userData);
+          setCard(cardData);
+      })
+      .catch((err) => {
+          console.log(err);
+      });
   }, []);
 
   function handleUpdateUser(data) {
@@ -153,11 +153,7 @@ function App() {
 
   function handleRegister(email, password) {
     auth.register(email, password)
-      .then((data) => {
-          if (data) {
-              localStorage.setItem("jwt", data.jwt);
-              setEmail(data.data.email);
-          }
+      .then(() => {
           history.push("/sign-in");
           setSuccess(true);
           setIsInfoTooltipOpen(true);
@@ -165,7 +161,7 @@ function App() {
       .catch((err) => {
           console.error(err);
           setSuccess(false);
-          setIsInfoTooltipOpen(false);
+          setIsInfoTooltipOpen(true);
       });
   }
 
@@ -180,6 +176,7 @@ function App() {
         })
         .catch((err) => {
             console.error(err);
+            setSuccess(false);
             setIsInfoTooltipOpen(true);
         });
   }
