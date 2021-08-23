@@ -79,7 +79,7 @@ export class Api {
 }
 
 const api = new Api({
-    address: 'https://mesto.nomoreparties.co/v1/cohort-24',
+    address: 'http://178.154.198.1/api',
     headers: {
       authorization:'fad10afc-9b25-4889-84c7-ba30776ae655',
       'Content-Type': 'application/json',

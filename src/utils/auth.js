@@ -1,4 +1,4 @@
-export const BASE_URL = 'https://auth.nomoreparties.co';
+export const BASE_URL = 'http://178.154.198.1/api';
 
 const checkResponse = (res) => {
   if (res.ok) {
