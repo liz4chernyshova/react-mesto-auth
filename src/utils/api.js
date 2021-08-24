@@ -79,7 +79,7 @@ export class Api {
 }
 
 const api = new Api({
-    address: 'http://178.154.198.1/api',
+    address: 'http://api.chernyshova.backend .nomoredomains.rocks',
     headers: {
       authorization:'fad10afc-9b25-4889-84c7-ba30776ae655',
       'Content-Type': 'application/json',
